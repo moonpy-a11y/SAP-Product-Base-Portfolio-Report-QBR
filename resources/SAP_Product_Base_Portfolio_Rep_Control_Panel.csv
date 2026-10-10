@@ -1,0 +1,5 @@
+Configuration Parameter,Value,Unit / Description
+Global Sales Bonus Budget Pool,500000.0,USD Total Budget Pool
+Global Marketing Budget Pool,1200000.0,USD Total Capital Allocation
+Alpha Margin Weight Scaling Parameter,1.5,Weighting Factor for Contribution Margin vs Target
+Default Multiplier Baseline (Tier 2),1.0,Baseline Tier Weight

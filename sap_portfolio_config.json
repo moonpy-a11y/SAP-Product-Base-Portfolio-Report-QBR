@@ -1,0 +1,35 @@
+{
+  "project_name": "sap-product-base-portfolio-report-qbr",
+  "version": "1.0.0",
+  "description": "SAP Product Base Portfolio Report (QBR) Engine with dynamic SAP sync detection and automated demo fallback mode.",
+  "configuration": {
+    "sap_sync": {
+      "auto_detect": true,
+      "sap_host_env_var": "SAP_S4HANA_HOST",
+      "sap_client_env_var": "SAP_CLIENT",
+      "status": "DETECT_AT_RUNTIME",
+      "fallback_mode": "DEMO_ENCLOSED_CSV_DATA"
+    },
+    "portfolio_data_sources": {
+      "control_panel": "resources/SAP_Product_Base_Portfolio_Rep_Control_Panel.csv",
+      "dim_hierarchy": "resources/SAP_Product_Base_Portfolio_Rep_Dim_Hierarchy.csv",
+      "engine_portfolio_calc": "resources/SAP_Product_Base_Portfolio_Rep_Engine_Portfolio_Calc.csv",
+      "qbr_y1_y2_report": "resources/SAP_Product_Base_Portfolio_Rep_QBR_Y1_Y2_Report.csv",
+      "qbr_dashboard": "resources/SAP_Product_Base_Portfolio_Rep_QRB_Dashboard.csv"
+    },
+    "governance_rules": {
+      "product_hierarchy_levels": [
+        {"level": 1, "name": "Brand/Division", "length": 5},
+        {"level": 2, "name": "Category", "length": 5},
+        {"level": 3, "name": "Subcategory/SKU", "length": 8}
+      ],
+      "adl_matrix": {
+        "lifecycle_phases": ["Embryonic", "Growth", "Mature", "Aging"],
+        "competitive_positions": ["Dominant", "Strong", "Favorable", "Tenable"]
+      },
+      "lta_productivity_models": ["4x4", "3x4", "3x2"]
+    }
+  },
+  "git_user": "moonpy-a11y",
+  "contact_email": "cpluna.ing@gmail.com"
+}

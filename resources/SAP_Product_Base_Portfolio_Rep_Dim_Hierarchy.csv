@@ -1,0 +1,6 @@
+Node_ID,L1_Brand_Code,L1_Desc,L2_Cat_Code,L2_Desc,L3_Sub_Code,L3_Desc
+ELEC1.CTRLA.00001000,ELEC1,Electronics,CTRLA,Microcontrollers,1000,Edge AI Processors
+ELEC1.CTRLA.00002000,ELEC1,Electronics,CTRLA,Microcontrollers,2000,Safety Core MCUs
+MECH2.ACTUB.00002000,MECH2,Mechanics,ACTUB,Actuators,2000,Linear Actuators
+POWR3.MODLC.00003000,POWR3,Power Systems,MODLC,Power Modules,3000,SiC Inverters
+SENS4.OPTOE.00004000,SENS4,Sensors,OPTOE,Optical Sensors,4000,LiDAR Receivers
